@@ -89,7 +89,8 @@
 }
 .slick-prev:before
 {
-    content: '';
+    content: '<-';
+    color: black;
     position: absolute;
     left: -40px;
     bottom: 15px;
@@ -119,7 +120,8 @@
 }
 .slick-next:before
 {
-    content: '';
+    content: '->';
+    color: black;
     position: absolute;
     bottom: 15px;
     width: 40px;

@@ -1,12 +1,9 @@
 <section class="about-section">
     <div class="container">
         <div class="inner-wrapper">
-            <div class="about-header">
-                <h2>Looking for </h2><span id="header-dynamic-content" class=""></span>
-            </div>
             <div class="main">
                 <div class="row">
-                    <div class="col col-12 col-sm-6">
+                    <div class="col col-12 col-md-6">
                         <div class="section-title">
                             <h3>Welcome to Lorem Ipsum</h3>
                         </div>
@@ -19,9 +16,9 @@
                                 consequuntur aliquid magnam, officia saepe dignissimos vitae optio.</p>
                         </div>
                     </div>
-                    <div class="col col-12 col-sm-6">
+                    <div class="col col-12 col-md-6">
                         <div class="about-section-image">
-                            <img src="assets/images/clinic.jpg" alt="">
+                            <img src="assets/images/about.jpg" alt="">
                         </div>
                     </div>
                 </div>

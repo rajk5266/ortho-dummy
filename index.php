@@ -45,24 +45,17 @@
 
 
 <!-- MAKE CHOICES  SECTION  -->
-<?php include "assets/components/HomePage/make-best-choice.php"; ?>
+<?php include "assets/components/HomePage/solution.php"; ?>
 <!-- MAKE CHOICES SECTION  -->
 
 
 
 
-
-<!-- SERVICE SECTION  -->
-<?php include "assets/components/HomePage/services.php"; ?>
-<!-- SERVICE SECTION  -->
-
+<!-- CONDITIONS TREATED SECTION  -->
+<?php include "assets/components/HomePage/conditions-treated.php"; ?>
+<!-- CONDITIONS TREATED SECTION  -->
 
 
-
-
-<!-- EXPERT SECTION  -->
-<?php include "assets/components/HomePage/expert.php"; ?>
-<!-- EXPERT SECTION  -->
 
 
 
@@ -73,12 +66,18 @@
 <!-- TESTIMONIALS SECTION  -->
 
 
+<!-- ACHIEVEMENTS SECTION  -->
+<?php include "assets/components/HomePage/achievement.php"; ?>
+<!-- ACHIEVEMENTS SECTION  -->
 
 
 
-<!-- FACTS SECTION  -->
-<?php include "assets/components/HomePage/facts.php"; ?>
-<!-- FACTS SECTION  -->
+
+
+<!-- INTEGRATED SOLUTIONS SECTION  -->
+<?php include "assets/components/HomePage/integrated-solutions.php"; ?>
+<!-- INTEGRATED SOLUTIONS SECTION  -->
+
 
 
 
@@ -94,6 +93,7 @@
 
 
   <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/counter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

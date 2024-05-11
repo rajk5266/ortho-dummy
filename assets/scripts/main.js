@@ -1,7 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   // checkPage();
-  // console.log(window.innerWidth)
-  changeHeaderValue();
   NavbarFixed();
   document
     .getElementById("navbar-toggler-button")
@@ -10,13 +8,17 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
 function NavbarFixed() {
   const navbar = document.getElementById("header-menu");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 70) {
-      navbar.classList.add("navbar-fixed");
+      console.log('scrolled')
+      navbar.classList.add("navbar-fixed-top");
+      document.getElementById("header-logo").style.width = "70px";
     } else {
-      navbar.classList.remove("navbar-fixed");
+      navbar.classList.remove("navbar-fixed-top");
+      document.getElementById("header-logo").style.width = "130px";
     }
   });
 }
@@ -102,33 +104,21 @@ function changeStyle(name) {
   });
 }
 
-// HEADER DYNAMIC CONTENT
-const dynamicContents = ["service-1", "service-2", "service-3", "service-4"];
-
-function changeHeaderValue() {
-  let i = 0;
-  const headerSpan = document.getElementById("header-dynamic-content");
-
-  setInterval(() => {
-    setTimeout(() => {
-      i = (i + 1) % dynamicContents.length;
-      headerSpan.textContent = dynamicContents[i];
-      headerSpan.classList.add("span-animation");
-    }, 700); // Adjust the timing to match your animation duration
-    headerSpan.classList.remove("span-animation");
-  }, 1500);
-}
-// HEADER DYNAMIC CONTENT
-
 $(document).ready(function () {
   $(".testimonials").slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 768, // Breakpoint for smaller screens
+        breakpoint: 992, // Breakpoint for smaller screens
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 767, // Breakpoint for smaller screens
         settings: {
           slidesToShow: 1,
         },
